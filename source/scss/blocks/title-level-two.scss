@@ -1,0 +1,12 @@
+@import "variables";
+
+.title-level-two {
+  font-size: $fs-h2;
+  line-height: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .title-level-two {
+    font-size: $fs-h2 + 1.5rem;
+  }
+}

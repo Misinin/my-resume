@@ -1,0 +1,12 @@
+@import "variables";
+
+.title-level-three {
+  font-size: $fs-h3;
+  line-height: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .title-level-three {
+    font-size: $fs-h3 + 0.25rem;
+  }
+}

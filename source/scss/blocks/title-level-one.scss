@@ -1,0 +1,13 @@
+@import "variables";
+
+.title-level-one {
+  font-size: $fs-h1;
+  font-weight: $fw-reg;
+  line-height: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .title-level-one {
+    font-size: $fs-h1 + 1.5rem;
+  }
+}
