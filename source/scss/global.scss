@@ -7,6 +7,17 @@
 }
 
 body {
+  margin: 0;
+
   font-family: $ff-primary;
   font-weight: $fw-reg;
+  line-height: 1.6;
+  color: $clr-text;
+
+  background-color: $clr-bg;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
