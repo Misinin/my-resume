@@ -1,0 +1,12 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ff-primary;
+  font-weight: $fw-reg;
+}

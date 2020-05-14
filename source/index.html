@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/pt-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/pt-sans-italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/pt-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <include src="build/img/sprite.svg"></include>
+  <header>
+    <img class="logo" src="https://via.placeholder.com/100x20" alt="resume logo">
+    <button class="nav-toggle">
+      <span>Navigation toggle</span>
+    </button>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="#home" class="nav-list__link">home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#about" class="nav-list__link">about me</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#education" class="nav-list__link">education</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#skills" class="nav-list__link">skills</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#work" class="nav-list__link">my work</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#contacts" class="nav-list__link">contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Mikhail Misinin</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">
+      junior front-end developer
+    </p>
+    <img class="intro__img" src="https://via.placeholder.com/150x150" alt="a picture of Misinin Mikhail face">
+  </section>
+  <section class="about" id="about">
+    <h2 class="section__title section__title--about">
+      About me
+    </h2>
+    <p class="section__subtitle section__subtitle--about">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Assumenda, pariatur ut? Harum aut error, adipisci officiis quod tempore similique accusamus pariatur eos velit.
+      Rem quod cum sequi distinctio, quam doloribus!
+    </p>
+  </section>
+  <section class="education" id="education">
+    <h2 class="section__title section__title--education">
+      Education
+    </h2>
+    <ul class="education-list">
+      <li class="education-list__item education-place">
+        <h3 class="education-place__title">Saint-Petersburg University of Telecommunication</h3>
+        <p class="education-place__date">
+          Sept. 2010 - May 2015
+        </p>
+        <p class="education-place__subtitle">
+          Engineer means of communications width mobile objects
+        </p>
+      </li>
+      <li class="education-list__item education-place">
+        <h3 class="education-place__title">HTML Academy</h3>
+        <p class="education-place__date">
+          Jan. 2020 - present
+        </p>
+        <p class="education-place__subtitle">
+          Learning goal to master development to complex client applications
+        </p>
+        <input class="visually-hidden" type="radio" name="certificates" id="show-certificates-block">
+        <label for="show-certificates-block">show certificates</label>
+        <div class="certificates">
+          <input class="visually-hidden" type="radio" name="certificates" id="hide-certificates-block">
+          <label for="hide-certificates-block">hide certificates</label>
+          <ul class="certificates-list">
+            <li class="certificates-list__item">
+              <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
+            </li>
+            <li class="certificates-list__item">
+              <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="my-skills" id="skills">
+    <h2 class="section__title section__title--skills">
+      My skills
+    </h2>
+    <ul class="skills-list">
+      <li class="skill">
+        <h3>skill 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+        </p>
+      </li>
+      <li class="skill">
+        <h3>skill 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+        </p>
+      </li>
+      <li class="skill">
+        <h3>skill 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+        </p>
+      </li>
+    </ul>
+    <a href="#work" class="button">My works</a>
+  </section>
+  <section class="my-works" id="work">
+    <h2 class="section__title section__title--works">
+      My works
+    </h2>
+    <p class="section__suntitle">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores officiis expedita quis nam non natus nostrum,
+      ea facere maiores autem amet impedit dolor sint laudantium. Nostrum, nobis? Soluta, rem?
+    </p>
+    <ul class="portfolio">
+      <li class="portfolio__item">
+        <a href="#" class="portfolio__link">
+          <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
+        </a>
+      </li>
+      <li class="portfolio__item">
+        <a href="#" class="portfolio__link">
+          <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <a href="mailto:mmisinin@gamil.com" class="footer-link">misinin@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="" class="social-list__link">a</a></li>
+      <li class="social-list__item"><a href="" class="social-list__link">b</a></li>
+      <li class="social-list__item"><a href="" class="social-list__link">c</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

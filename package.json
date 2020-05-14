@@ -1,0 +1,52 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "For my portfolio",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.7.6",
+    "del": "^5.1.0",
+    "editorconfig": "^0.15.3",
+    "grunt-cwebp": "^2.1.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-html-validator": "0.0.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-w3c-css": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "minjs": "^2.0.6",
+    "node-sass": "^4.14.1",
+    "posthtml-include": "^1.4.3",
+    "stylelint": "^13.3.3",
+    "stylelint-scss": "^3.17.2",
+    "svgstore": "^3.0.0-2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "author": "Mikhail Misinin",
+  "license": "ISC"
+}
