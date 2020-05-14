@@ -14,11 +14,11 @@
   <include src="build/img/sprite.svg"></include>
   <header>
     <img class="logo" src="https://via.placeholder.com/100x20" alt="resume logo">
-    <button class="nav-toggle">
-      <span>Navigation toggle</span>
-    </button>
-    <nav>
-      <ul class="nav-list">
+    <nav class="nav nav--nojs">
+      <button class="button button--navigation nav__button">
+        <span class="visually-hidden">Navigation toggle</span>
+      </button>
+      <ul class="nav-list nav-list--closed nav__list">
         <li class="nav-list__item">
           <a href="#home" class="nav-list__link">home</a>
         </li>
@@ -41,10 +41,10 @@
     </nav>
   </header>
   <section class="intro section" id="home">
-    <h1 class="section__title section__title--intro title-level-one">
+    <h1 class="section__title section__title--intro title-level-one intro__title">
       Hi, I am <strong class="accent-phrase">Mikhail Misinin</strong>
     </h1>
-    <p class="section__subtitle section__subtitle--intro">
+    <p class="section__subtitle section__subtitle--intro intro__subtitle">
       junior front-end developer
     </p>
     <img class="intro__img" src="https://via.placeholder.com/150x150" alt="a picture of Misinin Mikhail face">

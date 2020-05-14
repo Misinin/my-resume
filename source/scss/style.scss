@@ -1,7 +1,12 @@
 @import "fonts";
 @import "global";
 @import "variables";
+@import "visually-hidden";
+@import "blocks/nav";
+@import "blocks/nav-list";
+@import "blocks/button.scss";
 @import "blocks/section";
+@import "blocks/intro";
 @import "blocks/title-level-one";
 @import "blocks/title-level-two";
 @import "blocks/accent-phrase.scss";

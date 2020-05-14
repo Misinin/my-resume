@@ -1,0 +1,32 @@
+@import "variables";
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intro__title {
+    width: 70%;
+    margin-left: 40%;
+    margin-bottom: 0.5em;
+  }
+
+  .intro__img {
+    position: absolute;
+    left: 10%;
+    width: 180px;
+    height: 200px;
+
+    box-shadow: $box-shadow;
+  }
+
+  .intro__subtitle {
+    width: 100%;
+    padding-left: 42%;
+  }
+}
