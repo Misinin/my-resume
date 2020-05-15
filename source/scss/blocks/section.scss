@@ -1,12 +1,25 @@
 @import "variables";
 
-.section {
-  padding: 5em 2em;
-}
-
 .section__title {
   margin: 0;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.1em;
+}
+
+.section__title--about {
+  margin-bottom: 1em;
+}
+
+.section__title--education {
+  margin-bottom: 1em;
+
+  color: $clr-text-contrast;
+}
+
+.section__title--works {
+  position: relative;
+  color: $clr-accent;
+
+  text-decoration: underline;
 }
 
 .section__subtitle {
@@ -16,13 +29,18 @@
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  margin-bottom: 1em;
-
   font-family: $ff-secondary;
+}
+
+.section__subtitle--intro {
+  width: max-content;
+  padding: 0.2rem;
+
+  font-family: $ff-primary;
 
   background-color: $clr-accent;
 }
 
-.section__subtitle--intro {
-  font-family: $ff-primary;
+.section__subtitle--about {
+  text-align: center;
 }

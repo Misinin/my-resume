@@ -1,0 +1,43 @@
+@import "variables";
+
+.education-place {
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 1.2em;
+
+  background-color: $clr-bg;
+
+  box-shadow: 0.25em 0.2em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.education-place__title {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.education-place__date {
+  margin: 0;
+
+  font-family: $ff-secondary;
+}
+
+.education-place__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-place__radio-show:checked ~ .education-place__certificates {
+  position: absolute;
+  left: -9%;
+  width: 95vw;
+  display: block;
+
+  background-color: $clr-dropdown-bg;
+  box-shadow: $box-shadow;
+}
+
+.education-place__radio-hidden:checked ~ .education-place__certificates {
+  display: none;
+}

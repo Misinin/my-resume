@@ -1,0 +1,21 @@
+@import "variables";
+
+.portfolio {
+  padding: 0;
+
+  list-style: none;
+}
+
+.portfolio__item {
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}
+
+.portfolio__img {
+  width: 100%;
+}
+
+.portfolio__caption {
+  font-family: $ff-secondary;
+}

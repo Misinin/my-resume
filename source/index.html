@@ -12,9 +12,10 @@
 </head>
 <body>
   <include src="build/img/sprite.svg"></include>
-  <header>
-    <img class="logo" src="https://via.placeholder.com/100x20" alt="resume logo">
-    <nav class="nav nav--nojs">
+  <header class="header">
+    <div class="header__wrapper wrapper wrapper--header">
+      <img class="logo" src="https://via.placeholder.com/100x20" alt="resume logo">
+    <nav class="nav--opened">
       <button class="button button--navigation nav__button">
         <span class="visually-hidden">Navigation toggle</span>
       </button>
@@ -39,114 +40,129 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <section class="intro section" id="home">
-    <h1 class="section__title section__title--intro title-level-one intro__title">
-      Hi, I am <strong class="accent-phrase">Mikhail Misinin</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro intro__subtitle">
-      junior front-end developer
-    </p>
-    <img class="intro__img" src="https://via.placeholder.com/150x150" alt="a picture of Misinin Mikhail face">
+    <div class="intro__wrapper wrapper wrapper--intro">
+      <h1 class="section__title section__title--intro title-level-one intro__title">
+        Hi, I am <strong class="accent-phrase">Mikhail Misinin</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro intro__subtitle">
+        junior front-end developer
+      </p>
+      <img class="intro__img" src="https://via.placeholder.com/150x150" alt="a picture of Misinin Mikhail face">
   </section>
   <section class="about section" id="about">
-    <h2 class="section__title section__title--about about-title title-level-two">
-      About me
-    </h2>
-    <p class="section__subtitle section__subtitle--about">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Assumenda, pariatur ut? Harum aut error, adipisci officiis quod tempore similique accusamus pariatur eos velit.
-      Rem quod cum sequi distinctio, quam doloribus!
-    </p>
+    <div class="about__wrapper wrapper wrapper--about">
+      <h2 class="section__title section__title--about about-title title-level-two">
+        About me
+      </h2>
+      <p class="section__subtitle about__subtitle section__subtitle--about">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Assumenda, pariatur ut? Harum aut error, adipisci officiis quod tempore similique accusamus pariatur eos velit.
+        Rem quod cum sequi distinctio, quam doloribus!
+      </p>
+      <a href="#" class="about__button button button--cv">download cv</a>
+    </div>
   </section>
   <section class="education section" id="education">
-    <h2 class="section__title section__title--education title-level-two">
-      Education
-    </h2>
-    <ul class="education-list">
-      <li class="education-list__item education-place">
-        <h3 class="education-place__title title-level-three">Saint-Petersburg University of Telecommunication</h3>
-        <p class="education-place__date">
-          Sept. 2010 - May 2015
-        </p>
-        <p class="education-place__subtitle">
-          Engineer means of communications width mobile objects
-        </p>
-      </li>
-      <li class="education-list__item education-place">
-        <h3 class="education-place__title title-level-three">HTML Academy</h3>
-        <p class="education-place__date">
-          Jan. 2020 - present
-        </p>
-        <p class="education-place__subtitle">
-          Learning goal to master development to complex client applications
-        </p>
-        <input class="visually-hidden" type="radio" name="certificates" id="show-certificates-block">
-        <label for="show-certificates-block">show certificates</label>
-        <div class="certificates">
-          <input class="visually-hidden" type="radio" name="certificates" id="hide-certificates-block">
-          <label for="hide-certificates-block">hide certificates</label>
-          <ul class="certificates-list">
-            <li class="certificates-list__item">
-              <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
-            </li>
-            <li class="certificates-list__item">
-              <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
+    <div class="education__wrapper wrapper wrapper--education">
+      <h2 class="section__title section__title--education title-level-two">
+        Education
+      </h2>
+      <ul class="education__list education-list">
+        <li class="education-list__item education-place">
+          <h3 class="education-place__title title-level-three">Saint-Petersburg University of Telecommunication</h3>
+          <p class="education-place__date">
+            Sept. 2010 - May 2015
+          </p>
+          <p class="education-place__subtitle">
+            Engineer means of communications width mobile objects
+          </p>
+        </li>
+        <li class="education-list__item education-place">
+          <h3 class="education-place__title title-level-three">HTML Academy</h3>
+          <p class="education-place__date">
+            Jan. 2020 - present
+          </p>
+          <p class="education-place__subtitle">
+            Learning goal to master development to complex client applications
+          </p>
+          <input class="education-place__radio-show visually-hidden" type="radio" name="certificates" id="show-certificates-block">
+          <label class="education-place__button button button--certificates" for="show-certificates-block">show certificates</label>
+          <input class="education-place__radio-hidden visually-hidden" type="radio" name="certificates" id="hide-certificates-block" checked>
+          <div class="education-place__certificates certificates">
+            <label class="button button--hide-certificates certificates__close-button" class="" for="hide-certificates-block">
+              <span class="visually-hidden">hide certificates</span>
+            </label>
+            <ul class="certificates-list">
+              <li class="certificates-list__item">
+                <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
+              </li>
+              <li class="certificates-list__item">
+                <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="my-skills section" id="skills">
-    <h2 class="section__title section__title--skills title-level-two">
-      My skills
-    </h2>
-    <ul class="skills-list">
-      <li class="skill">
-        <h3 class="title-level-three">skill 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
-        </p>
-      </li>
-      <li class="skill">
-        <h3 class="title-level-three">skill 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
-        </p>
-      </li>
-      <li class="skill">
-        <h3 class="title-level-three">skill 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-          corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
-        </p>
-      </li>
-    </ul>
-    <a href="#work" class="button">My works</a>
+    <div class="my-skills__wrapper wrapper wrapper--my-skills">
+      <h2 class="section__title section__title--skills title-level-two">
+        My skills
+      </h2>
+      <ul class="skills-list">
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">skill 1</h3>
+          <p class="skill__subtitle">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">skill 2</h3>
+          <p class="skill__subtitle">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">skill 3</h3>
+          <p class="skill__subtitle">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
+            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+          </p>
+        </li>
+      </ul>
   </section>
   <section class="my-works section" id="work">
-    <h2 class="section__title section__title--works title-level-two">
-      My works
-    </h2>
-    <p class="section__suntitle">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores officiis expedita quis nam non natus nostrum,
-      ea facere maiores autem amet impedit dolor sint laudantium. Nostrum, nobis? Soluta, rem?
-    </p>
-    <ul class="portfolio">
-      <li class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
-        </a>
-      </li>
-      <li class="portfolio__item">
-        <a href="#" class="portfolio__link">
-          <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
-        </a>
-      </li>
-    </ul>
+    <div class="my-works__wrapper wrapper wrapper--my-works">
+      <a href="http://github.com">
+        <h2 class="section__title section__title--works title-level-two">
+          My works
+        </h2>
+      </a>
+      <p class="section__suntitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores officiis expedita quis nam non natus nostrum,
+        ea facere maiores autem amet impedit dolor sint laudantium. Nostrum, nobis? Soluta, rem?
+      </p>
+      <ul class="section__portfolio-list portfolio">
+        <li class="portfolio__item">
+          <a href="#">
+            <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
+          </a>
+          <figcaption class="portfolio__caption">description for image</figcaption>
+        </li>
+        <li class="portfolio__item">
+          <a href="#">
+            <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
+          </a>
+          <figcaption class="portfolio__caption">description for image</figcaption>
+        </li>
+      </ul>
+    </div>
   </section>
   <footer>
     <a href="mailto:mmisinin@gamil.com" class="footer-link">misinin@gmail.com</a>

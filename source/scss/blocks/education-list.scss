@@ -1,0 +1,11 @@
+@import "variables";
+
+.education-list {
+  list-style: none;
+}
+
+.education-list__item {
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}

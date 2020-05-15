@@ -1,0 +1,28 @@
+@import "variables";
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper--intro {
+  margin-top: 40%;
+}
+
+.wrapper--about {
+  margin-top: 20%;
+}
+
+.wrapper--education {
+  padding: 10% 0;
+}
+
+.wrapper--my-skills {
+  width: 90%;
+  padding: 10% 0;
+}

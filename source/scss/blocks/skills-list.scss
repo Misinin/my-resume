@@ -1,0 +1,18 @@
+@import "variables";
+
+.skills-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.skills-list__item {
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}
+
+.skills-list__button {
+  display: block;
+  margin: 0 auto;
+}

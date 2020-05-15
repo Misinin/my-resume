@@ -55,7 +55,33 @@
   display: none;
 }
 
+.nav--opened .nav__list {
+  position: absolute;
+  left: 0;
+  display: block;
+  background-color: $clr-bg;
+}
+
 .nav--nojs .nav__list {
   display: flex;
   flex-direction: column;
+}
+
+.nav__list--dropdown {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 80%;
+  margin: 0;
+  padding: 7.5% 6%;
+
+  box-sizing: border-box;
+
+  box-shadow: $box-shadow;
+}
+
+.main-nav__item {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
