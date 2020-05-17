@@ -1,3 +1,62 @@
-.section {
-  padding: 5em 2em;
+@import "variables";
+
+.section__title {
+  margin: 0;
+}
+
+.section__title--about {
+  margin-bottom: 1em;
+}
+
+.section__title--education,
+.section__title--contacts {
+  margin-bottom: 1em;
+
+  color: $clr-text-contrast;
+}
+
+.section__title--works {
+  position: relative;
+  margin-bottom: 2em;
+
+  color: $clr-accent;
+
+  text-decoration: underline;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  font-family: $ff-secondary;
+}
+
+.section__subtitle--intro {
+  width: max-content;
+  padding: 0.2rem;
+
+  font-family: $ff-primary;
+
+  background-color: $clr-accent;
+}
+
+.section__subtitle--about {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .section__subtitle--about {
+    color: $clr-text-contrast;
+  }
+
+  .section__title--education {
+    color: $clr-text;
+  }
+
+  .section__title--works {
+    margin-bottom: 1em;
+  }
 }

@@ -1,0 +1,44 @@
+@import "variables";
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.wrapper--header {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wrapper--my-skills {
+  width: 90%;
+}
+
+.wrapper--contacts {
+  padding: 1em 0;
+}
+
+.wrapper--my-works {
+  padding-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: 91%;
+  }
+
+  .wrapper--intro {
+    margin-top: 9em;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  .wrapper--about {
+    margin-top: 0;
+  }
+}

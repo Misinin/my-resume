@@ -1,0 +1,18 @@
+@import "variables";
+
+.skill {
+  padding: 1.2em;
+
+  background-color: $clr-bg-dark;
+  box-shadow: $box-shadow;
+}
+
+.skill__title {
+  color: $clr-text-contrast;
+
+  text-transform: uppercase;
+}
+
+.skill__subtitle {
+  color: $clr-text-contrast;
+}

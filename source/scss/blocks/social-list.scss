@@ -1,0 +1,18 @@
+@import "variables";
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.social-list > * + * {
+  margin-left: 2em;
+}
+
+.social-list__icon {
+  fill: $clr-text-contrast;
+}

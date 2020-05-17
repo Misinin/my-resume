@@ -1,0 +1,44 @@
+@import "variables";
+
+.technologes {
+  padding: 0;
+
+  list-style: none;
+}
+
+.technologes__item {
+  position: relative;
+  padding-left: 2em;
+}
+
+.technologes__icon {
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+}
+
+.technologes__icon--html {
+  fill: $clr-html-fill;
+}
+
+.technologes__icon--less,
+.technologes__icon--gulp {
+  width: 25px;
+  height: 25px;
+  top: 0;
+
+  fill: $clr-less-fill;
+}
+
+@media (min-width: $tablet-width) {
+  .technologes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .technologes__icon {
+    width: 25px;
+    height: 25px;
+  }
+}

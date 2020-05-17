@@ -1,0 +1,22 @@
+@import "variables";
+
+.education-list {
+  list-style: none;
+}
+
+.education-list__item {
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 800px) {
+  .education-list {
+    display: flex;
+  }
+
+  .education-list__item {
+    width: 45%;
+    align-self: flex-start;
+  }
+}

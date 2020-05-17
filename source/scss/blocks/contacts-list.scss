@@ -1,0 +1,22 @@
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list__link {
+  position: relative;
+  display: block;
+
+  font-family: $ff-primary;
+  font-weight: $fw-reg;
+  font-size: 1.2rem;
+  line-height: 2em;
+  color: $clr-text-contrast;
+}
+
+.contacts-list__icon {
+  position: absolute;
+  top: 0.5rem;
+  left: -30px;
+
+  fill: currentColor;
+}

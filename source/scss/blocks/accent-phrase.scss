@@ -1,8 +1,9 @@
 @import "variables";
 
 .accent-phrase {
-  display: inline-block;
+  display: block;
 
   font-family: $ff-bold;
   font-weight: $fw-bold;
 }
+

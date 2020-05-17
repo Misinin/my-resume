@@ -1,0 +1,16 @@
+@import "variables";
+
+.education {
+  background-color: $clr-bg-dark;
+}
+
+.education__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .education {
+    background-color: $clr-bg;
+  }
+}
