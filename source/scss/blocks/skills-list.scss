@@ -7,6 +7,8 @@
 }
 
 .skills-list__item {
+  max-width: 490px;
+
   &:not(:last-of-type) {
     margin-bottom: 1em;
   }
@@ -15,4 +17,13 @@
 .skills-list__button {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    column-gap: 1rem;
+  }
 }

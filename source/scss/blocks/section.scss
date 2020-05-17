@@ -2,14 +2,14 @@
 
 .section__title {
   margin: 0;
-  margin-bottom: 0.1em;
 }
 
 .section__title--about {
   margin-bottom: 1em;
 }
 
-.section__title--education {
+.section__title--education,
+.section__title--contacts {
   margin-bottom: 1em;
 
   color: $clr-text-contrast;
@@ -17,6 +17,8 @@
 
 .section__title--works {
   position: relative;
+  margin-bottom: 2em;
+
   color: $clr-accent;
 
   text-decoration: underline;
@@ -43,4 +45,18 @@
 
 .section__subtitle--about {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .section__subtitle--about {
+    color: $clr-text-contrast;
+  }
+
+  .section__title--education {
+    color: $clr-text;
+  }
+
+  .section__title--works {
+    margin-bottom: 1em;
+  }
 }

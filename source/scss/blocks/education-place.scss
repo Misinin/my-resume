@@ -41,3 +41,11 @@
 .education-place__radio-hidden:checked ~ .education-place__certificates {
   display: none;
 }
+
+@media (min-width: 800px) {
+  .education-place__radio-show:checked ~ .education-place__certificates {
+    bottom: -10rem;
+    left: 5%;
+    width: 90%;
+  }
+}

@@ -1,0 +1,14 @@
+@import "variables";
+
+.projects-links {
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .projects-links {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -8,18 +8,26 @@
     <link rel="preload" href="fonts/pt-sans-italic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/pt-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Mikhail Misinin</title>
 </head>
 <body>
-  <include src="build/img/sprite.svg"></include>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
     <div class="header__wrapper wrapper wrapper--header">
-      <img class="logo" src="https://via.placeholder.com/100x20" alt="resume logo">
-    <nav class="nav--opened">
-      <button class="button button--navigation nav__button">
-        <span class="visually-hidden">Navigation toggle</span>
-      </button>
-      <ul class="nav-list nav-list--closed nav__list">
+      <a>
+        <picture>
+          <source media="(min-width: 600px)" srcset="img/logo_tablet@1x.png 1x, img/logo_tablet@2x.png 2x">
+          <img class="logo" src="img/logo_mobile@1x.png" srcset="img/logo_mobile@2x.png 2x" width="150" height="70" alt="resume logo">
+        </picture>
+      </a>
+      <nav class="nav nav--nojs">
+        <button class="button button--navigation nav__button">
+          <span class="visually-hidden">Navigation toggle</span>
+        </button>
+      <ul class="nav-list nav__list">
         <li class="nav-list__item">
           <a href="#home" class="nav-list__link">home</a>
         </li>
@@ -48,21 +56,24 @@
         Hi, I am <strong class="accent-phrase">Mikhail Misinin</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro intro__subtitle">
-        junior front-end developer
+        a junior Front-end developer
       </p>
-      <img class="intro__img" src="https://via.placeholder.com/150x150" alt="a picture of Misinin Mikhail face">
+      <picture>
+        <source media="(min-width: 600px)" srcset="img/avatart_tablet@1x.jpg 1x, img/avatart_tablet@2x.jpg 2x">
+        <img class="intro__img" src="img/avatart_mobile@1x.jpg" srcset="img/avatart_mobile@2x.jpg 2x" width="231" height="231" alt="a picture of Misinin Mikhail face">
+      </picture>
+      </div>
   </section>
   <section class="about section" id="about">
     <div class="about__wrapper wrapper wrapper--about">
-      <h2 class="section__title section__title--about about-title title-level-two">
-        About me
+      <h2 class="section__title section__title--about about__title title-level-two">
+        About
       </h2>
       <p class="section__subtitle about__subtitle section__subtitle--about">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Assumenda, pariatur ut? Harum aut error, adipisci officiis quod tempore similique accusamus pariatur eos velit.
-        Rem quod cum sequi distinctio, quam doloribus!
+        Self-motivated junior front-end developer with knowledge and proficiency in HTML, CSS, Java Script and mobile responsive website development.
+        I'm looking for a job as a Junior Front-end developer at a company which is engaged in creating responsive websites and/or mobile-based applications.
       </p>
-      <a href="#" class="about__button button button--cv">download cv</a>
+      <a href="https://spb.hh.ru/resume/b6974230ff0774ce4a0039ed1f6c7a68384243" class="about__button button button--cv">download cv</a>
     </div>
   </section>
   <section class="education section" id="education">
@@ -72,12 +83,12 @@
       </h2>
       <ul class="education__list education-list">
         <li class="education-list__item education-place">
-          <h3 class="education-place__title title-level-three">Saint-Petersburg University of Telecommunication</h3>
+          <h3 class="education-place__title title-level-three">The Bonch-Bruevich Saint-Petersburg State University of Telecommunications</h3>
           <p class="education-place__date">
             Sept. 2010 - May 2015
           </p>
           <p class="education-place__subtitle">
-            Engineer means of communications width mobile objects
+            Mobile objects communication means Engineer.
           </p>
         </li>
         <li class="education-list__item education-place">
@@ -86,22 +97,30 @@
             Jan. 2020 - present
           </p>
           <p class="education-place__subtitle">
-            Learning goal to master development to complex client applications
+            The overall objective of the training is to master development of complex client applications.
           </p>
           <input class="education-place__radio-show visually-hidden" type="radio" name="certificates" id="show-certificates-block">
           <label class="education-place__button button button--certificates" for="show-certificates-block">show certificates</label>
           <input class="education-place__radio-hidden visually-hidden" type="radio" name="certificates" id="hide-certificates-block" checked>
           <div class="education-place__certificates certificates">
-            <label class="button button--hide-certificates certificates__close-button" class="" for="hide-certificates-block">
+            <label class="button button--hide-certificates certificates__close-button" for="hide-certificates-block">
               <span class="visually-hidden">hide certificates</span>
             </label>
             <ul class="certificates-list">
               <li class="certificates-list__item">
-                <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
-              </li>
+                <a class="certificates-list__link" href="https://www.dropbox.com/s/edygsfphhk1g8ek/HTML%26CSS%20leve1.pdf?dl=0">
+                  <span>
+                    HTML и CSS, уровень 1
+                  </span>
+                </a>
+                </li>
               <li class="certificates-list__item">
-                <img class="certificates-list__img" src="https://via.placeholder.com/200x400" alt="Html Academy certificate">
-              </li>
+                <a class="certificates-list__link" href="https://www.dropbox.com/s/32hfcwtwidjwf4j/HTML%26CSS%20level2.pdf?dl=0">
+                  <span>
+                    HTML и CSS, уровень 2
+                  </span>
+                </a>
+                </li>
             </ul>
           </div>
         </li>
@@ -110,67 +129,226 @@
   </section>
   <section class="my-skills section" id="skills">
     <div class="my-skills__wrapper wrapper wrapper--my-skills">
-      <h2 class="section__title section__title--skills title-level-two">
+      <h2 class="section__title my-skills__title section__title--skills title-level-two">
         My skills
       </h2>
-      <ul class="skills-list">
+      <ul class="my-skills__list skills-list">
         <li class="skill skills-list__item">
-          <h3 class="skill__title title-level-three">skill 1</h3>
+          <h3 class="skill__title title-level-three">HTML5</h3>
           <p class="skill__subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+            Semantic HTML and Accessible Rich Internet Applications (ARIA) create interfaces
+             that work for everyone in the most performant, robust, and simple way possible.
           </p>
         </li>
         <li class="skill skills-list__item">
-          <h3 class="skill__title title-level-three">skill 2</h3>
+          <h3 class="skill__title title-level-three">CSS3</h3>
           <p class="skill__subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+            CSS’s ability to alter website layouts to match different screen sizes. Created website
+             look great on any device. For a more detailed study
+             of css using css transformations,
+             I created a slider on pure css. To provide a more efficient way to place, align, and distribute space between elements on a web page, I used Flex-box.
           </p>
         </li>
         <li class="skill skills-list__item">
-          <h3 class="skill__title title-level-three">skill 3</h3>
+          <h3 class="skill__title title-level-three">Less/Scss</h3>
           <p class="skill__subtitle">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi possimus sapiente libero, ratione sit dolorem,
-            corrupti nisi necessitatibus veniam obcaecati voluptas sed iure amet laboriosam eligendi ad? Magnam, ipsum culpa?
+            For writing more organized code, I used css preprocessors. I like to combine the bem methodology and css preprocessors,
+            it helps to create flexible blocks using variables and mixins.
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">Gulp</h3>
+          <p class="skill__subtitle">
+            I used Gulp to automate the project build. Using Gulp, I optimized images and minimized css and js files, created svg-sprite and and added a style map.
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">BEM</h3>
+          <p class="skill__subtitle">
+            With each project I understand the BEM methodology more and strive to create independent blocks for future use.
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">GIT</h3>
+          <p class="skill__subtitle">
+            I work with the version сontrol system using the console (clone, branch, commit, push, pull, stash).
+          </p>
+        </li>
+        <li class="skill skills-list__item">
+          <h3 class="skill__title title-level-three">Java Script</h3>
+          <p class="skill__subtitle">
+            I know the syntax and basics of JavaScript (interaction with DOM, conditions, loops).
           </p>
         </li>
       </ul>
+      </div>
   </section>
   <section class="my-works section" id="work">
     <div class="my-works__wrapper wrapper wrapper--my-works">
-      <a href="http://github.com">
+      <a href="http://github.com/Misinin">
         <h2 class="section__title section__title--works title-level-two">
           My works
         </h2>
       </a>
-      <p class="section__suntitle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolores officiis expedita quis nam non natus nostrum,
-        ea facere maiores autem amet impedit dolor sint laudantium. Nostrum, nobis? Soluta, rem?
-      </p>
       <ul class="section__portfolio-list portfolio">
         <li class="portfolio__item">
-          <a href="#">
-            <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
-          </a>
-          <figcaption class="portfolio__caption">description for image</figcaption>
-        </li>
-        <li class="portfolio__item">
-          <a href="#">
-            <img class="portfolio__img" src="https://via.placeholder.com/200x200" alt="portfolio image">
-          </a>
-          <figcaption class="portfolio__caption">description for image</figcaption>
-        </li>
+          <img class="portfolio__img" width="256" height="144" src="img/pognali_mobile@1x.jpg" srcset="img/pognali_mobile@2x.jpg 2x" alt="preview 'Pognali' service">
+        <p class="portfolio__caption">
+          Website of an online service for searching for travel companions. It consists of three pages - the main page, catalog and page-form for choosing travel destinations.
+          The menu button on the mobile and tablet versions is made using java script. The BEM methodology was used.
+          <span class="portfolio__caption-accent">Adaptive graphics, grid-layout mobile, tablet, and desktop versions.</span>
+        </p>
+        <ul class="portfolio__technology technologes">
+          <li class="technologes__item">
+            <svg class="technologes__icon technologes__icon--html" width="19" height="19">
+              <use xlink:href="#icon-html"></use>
+            </svg>
+            HTML5
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon technologes__icon--less" width="19" height="19">
+              <use xlink:href="#icon-less"></use>
+            </svg>
+            Less
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon" width="19" height="19">
+              <use xlink:href="#icon-js"></use>
+            </svg>
+            Java Script
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon technologes__icon--gulp" width="19" height="19">
+              <use xlink:href="#icon-gulp"></use>
+            </svg>
+            Gulp
+          </li>
+        </ul>
+        <ul class="portfolio__links projects-links">
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://misinin.github.io/pognali/">Link to the project page</a>
+          </li>
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://github.com/Misinin/pognali">Link to the github repository</a>
+          </li>
+        </ul>
+      </li>
+      <li class="portfolio__item">
+          <img class="portfolio__img" width="256" height="144" src="img/device_mobile@1x.jpg" srcset="img/device_mobile@2x.jpg 2x" alt="preview 'Devive-market'">
+        <p class="portfolio__caption">
+          Website of an online gadget store. It consists of two pages - the main page and the catalog.
+           You can get to the catalog page by clicking on the section "Monopods for selfies".
+            Slides on the main page are switched and created in pure CSS. On the main page, you can call two Popups:
+          Click on the map in the Contacts section
+          By clicking on the "Write to us" button.
+          <span class="portfolio__caption-accent">The site was created with a screen resolution of 1200 pixels.</span>
+        </p>
+        <ul class="portfolio__technology technologes">
+          <li class="technologes__item">
+            <svg class="technologes__icon technologes__icon--html" width="19" height="19">
+              <use xlink:href="#icon-html"></use>
+            </svg>
+            HTML5
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon" width="19" height="19">
+              <use xlink:href="#icon-css"></use>
+            </svg>
+            CSS3
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon" width="19" height="19">
+              <use xlink:href="#icon-js"></use>
+            </svg>
+            Java Script
+          </li>
+        </ul>
+        <ul class="portfolio__links projects-links">
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://misinin.github.io/market_device/">Link to the project page</a>
+          </li>
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://github.com/Misinin/market_device">Link to the github repository</a>
+          </li>
+        </ul>
+      </li>
+      <li class="portfolio__item">
+          <img class="portfolio__img" width="256" height="144" src="img/gllacy_mobile@1x.jpg" srcset="img/gllacy_mobile@2x.jpg 2x" alt="preview 'Glaccy-market'">
+        <p class="portfolio__caption">
+          Website of an Online ice-cream store. It consists of two pages - the main page and the catalog.
+           You can get to the catalog page by clicking on the section "Catalog".
+            Slides on the main page are switched and created in pure CSS.
+          <span class="portfolio__caption-accent">The site was created with a screen resolution of 1200 pixels.</span>
+        </p>
+        <ul class="portfolio__technology technologes">
+          <li class="technologes__item">
+            <svg class="technologes__icon technologes__icon--html" width="19" height="19">
+              <use xlink:href="#icon-html"></use>
+            </svg>
+            HTML5
+          </li>
+          <li class="technologes__item">
+            <svg class="technologes__icon" width="19" height="19">
+              <use xlink:href="#icon-css"></use>
+            </svg>
+            CSS3
+          </li>
+        </ul>
+        <ul class="portfolio__links projects-links">
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://misinin.github.io/glaccy-market/">Link to the project page</a>
+          </li>
+          <li class="projects-links__item">
+            <a class="projects-links__link link" href="https://github.com/Misinin/glaccy-market">Link to the github repository</a>
+          </li>
+        </ul>
+      </li>
       </ul>
     </div>
   </section>
-  <footer>
-    <a href="mailto:mmisinin@gamil.com" class="footer-link">misinin@gmail.com</a>
+  <footer class="contacts section" id="contacts">
+    <div class="section__wrapper wrapper wrapper--contacts">
+      <h2 class="section__title section__title--contacts title-level-two">
+        My contacts
+      </h2>
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <a class="contacts-list__link" href="mailto:mikhail@misinin.ru">
+            <svg class="contacts-list__icon" width="19" height="19">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+            mikhail@misinin.ru
+          </a>
+        </li>
+        <li class="contacts-list__item">
+          <a class="contacts-list__link" href="tel:+79602568958">
+            <svg class="contacts-list__icon" width="19" height="19">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            +79602568958
+          </a>
+        </li>
+      </ul>
     <ul class="social-list">
-      <li class="social-list__item"><a href="" class="social-list__link">a</a></li>
-      <li class="social-list__item"><a href="" class="social-list__link">b</a></li>
-      <li class="social-list__item"><a href="" class="social-list__link">c</a></li>
+      <li class="social-list__item">
+        <a href="https://github.com/Misinin" class="social-list__link">
+          <span class="visually-hidden">GitHub</span>
+          <svg class="social-list__icon" width="45" height="45">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://vk.com/magic_cool" class="social-list__link">
+          <span class="visually-hidden">Vkontakte</span>
+          <svg class="social-list__icon" width="45" height="45">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
+    </li>
     </ul>
+    </div>
   </footer>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>

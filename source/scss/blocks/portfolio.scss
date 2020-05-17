@@ -9,13 +9,48 @@
 .portfolio__item {
   &:not(:last-of-type) {
     margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $clr-border;
   }
-}
-
-.portfolio__img {
-  width: 100%;
 }
 
 .portfolio__caption {
   font-family: $ff-secondary;
+}
+
+.portfolio__caption-accent {
+  font-weight: $fw-bold;
+}
+
+.portfolio__img {
+  box-shadow: $box-shadow;
+}
+
+@media (min-width: 800px) {
+  .portfolio__item {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .portfolio__caption {
+    margin: 0;
+  }
+
+  .portfolio__img {
+    align-self: center;
+  }
+
+  .portfolio__technology {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .portfolio__links {
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    align-self: start;
+  }
 }

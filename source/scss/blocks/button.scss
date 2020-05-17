@@ -69,3 +69,19 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button--cv {
+    padding: 0.5rem;
+
+    color: $clr-text-contrast;
+
+    border: 2px solid $clr-text-contrast;
+
+    transition: ease 0.2s;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

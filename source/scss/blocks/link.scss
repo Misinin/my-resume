@@ -1,0 +1,12 @@
+@import "variables";
+
+.link {
+  display: block;
+
+  font-family: $ff-primary;
+  font-weight: $fw-bold;
+  line-height: 2.5rem;
+  color: $clr-accent;
+
+  text-decoration: underline;
+}
