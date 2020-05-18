@@ -16,3 +16,9 @@
 .skill__subtitle {
   color: $clr-text-contrast;
 }
+
+@media (min-width: $desktop-width) {
+  .skill__subtitle {
+    font-size: 1.2rem;
+  }
+}

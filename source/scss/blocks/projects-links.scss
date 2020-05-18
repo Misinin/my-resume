@@ -12,3 +12,9 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .projects-links {
+    width: 40%;
+  }
+}

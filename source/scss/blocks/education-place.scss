@@ -49,3 +49,13 @@
     width: 90%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .education-place__date {
+    font-size: 1.2rem;
+  }
+
+  .education-place__subtitle {
+    font-size: 1.1rem;
+  }
+}

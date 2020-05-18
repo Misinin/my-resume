@@ -23,3 +23,11 @@
   font-size: 1em;
   color: $clr-text;
 }
+
+@media (min-width: $desktop-width) {
+  .nav-list__item {
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -20,3 +20,27 @@
 
   fill: currentColor;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-list__item {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list__link {
+    font-size: 1.6rem;
+  }
+
+  .contacts-list__icon {
+    top: 1rem;
+    left: -44px;
+    width: 25px;
+    height: 25px;
+  }
+}

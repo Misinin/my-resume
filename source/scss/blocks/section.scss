@@ -48,6 +48,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .section__title--skills {
+    margin-bottom: 2rem;
+  }
+
   .section__subtitle--about {
     color: $clr-text-contrast;
   }
@@ -58,5 +62,17 @@
 
   .section__title--works {
     margin-bottom: 1em;
+  }
+
+  .section__title--contacts {
+    margin-bottom: 0;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section__title--about {
+    text-align: center;
   }
 }
