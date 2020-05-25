@@ -31,7 +31,7 @@
 .education-place__radio-show:checked ~ .education-place__certificates {
   position: absolute;
   left: -9%;
-  width: 95vw;
+  width: 75vw;
   display: block;
 
   background-color: $clr-dropdown-bg;
@@ -40,6 +40,10 @@
 
 .education-place__radio-hidden:checked ~ .education-place__certificates {
   display: none;
+}
+
+.education-place__radio-show:focus ~ .education-place__button {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 @media (min-width: 800px) {

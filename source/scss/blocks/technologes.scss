@@ -45,11 +45,15 @@
 
 @media (min-width: $desktop-width) {
   .technologes {
-    width: 40%;
+    width: max-content;
   }
 
   .technologes__item {
     font-size: 1.2rem;
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
   }
 
   .technologes__icon--less {
