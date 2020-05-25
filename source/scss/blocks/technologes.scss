@@ -42,3 +42,22 @@
     height: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .technologes {
+    width: max-content;
+  }
+
+  .technologes__item {
+    font-size: 1.2rem;
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+
+  .technologes__icon--less {
+    width: 32px;
+    height: 32px;
+  }
+}

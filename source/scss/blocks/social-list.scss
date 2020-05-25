@@ -16,3 +16,10 @@
 .social-list__icon {
   fill: $clr-text-contrast;
 }
+
+@media (min-width: $desktop-width) {
+  .social-list__link:hover,
+  .social-list__link:focus {
+    box-shadow: 0 5px 10px 2px $clr-accent;
+  }
+}

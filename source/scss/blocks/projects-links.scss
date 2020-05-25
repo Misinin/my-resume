@@ -12,3 +12,15 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .projects-links {
+    width: max-content;
+  }
+
+  .projects-links__item {
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+}

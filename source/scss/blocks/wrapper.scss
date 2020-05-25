@@ -41,4 +41,30 @@
   .wrapper--about {
     margin-top: 0;
   }
+
+  .wrapper--my-skills {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper--header {
+    max-width: 1200px;
+  }
+
+  .wrapper--intro {
+    max-width: 1200px;
+    margin-top: 0;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wrapper--about,
+  .wrapper--education,
+  .wrapper--my-skills,
+  .wrapper--my-works {
+    max-width: 1200px;
+  }
 }

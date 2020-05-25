@@ -30,7 +30,16 @@
 }
 
 .button--certificates {
-  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.button--certificates:hover,
+.button--certificates:focus {
+  border-bottom: 1px solid $clr-accent;
+}
+
+.button--certificates:active {
+  opacity: 0.5;
 }
 
 .button--hide-certificates {
@@ -82,6 +91,10 @@
 
     &:hover {
       border-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 }

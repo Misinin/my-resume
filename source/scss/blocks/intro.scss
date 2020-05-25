@@ -9,6 +9,11 @@
   background-color: currentColor;
 }
 
+.intro__subtitle {
+  color: $clr-text-contrast;
+  font-weight: $fw-bold;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     position: relative;
@@ -36,5 +41,23 @@
     grid-column-end: -1;
 
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 550px;
+    height: 310px;
+  }
+
+  .intro__title {
+    width: 40%;
+  }
+
+  .intro__subtitle {
+    width: 550px;
   }
 }

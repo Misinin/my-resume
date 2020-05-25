@@ -24,6 +24,16 @@
   text-decoration: underline;
 }
 
+.section__title--works:hover {
+  opacity: 0.7;
+
+  text-decoration: none;
+}
+
+.section__title--works:active {
+  opacity: 0.5;
+}
+
 .section__subtitle {
   margin: 0;
   font-size: 1.25rem;
@@ -48,6 +58,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .section__title--skills {
+    margin-bottom: 2rem;
+  }
+
   .section__subtitle--about {
     color: $clr-text-contrast;
   }
@@ -58,5 +72,21 @@
 
   .section__title--works {
     margin-bottom: 1em;
+  }
+
+  .section__title--contacts {
+    margin-bottom: 0;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section__title--about {
+    text-align: center;
+  }
+
+  .section__title--works {
+    width: 16rem;
   }
 }

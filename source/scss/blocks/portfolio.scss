@@ -54,3 +54,9 @@
     align-self: start;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .portfolio__caption {
+    font-size: 1.2rem;
+  }
+}

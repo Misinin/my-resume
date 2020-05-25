@@ -12,6 +12,7 @@
 
   font-family: $ff-primary;
   font-size: 1.4em;
+  letter-spacing: 1px;
   line-height: 2;
   color: $clr-accent;
 
@@ -22,4 +23,48 @@
 .nav-list__link--repo {
   font-size: 1em;
   color: $clr-text;
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    justify-content: space-around;
+  }
+
+  .nav-list__item {
+    width: max-content;
+    align-self: flex-end;
+  }
+
+  .nav-list__link {
+    position: relative;
+    display: inline-block;
+
+    text-transform: none;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+
+    &::before,
+    &::after {
+      display: inline-block;
+      opacity: 0;
+      transition: transform 0.3s, opacity 0.2s;
+    }
+
+    &::before {
+      content: "[";
+      transform: translateX(1rem);
+    }
+
+    &::after {
+      content: "]";
+      transform: translateX(-1rem);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
