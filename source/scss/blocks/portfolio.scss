@@ -26,6 +26,10 @@
   box-shadow: $box-shadow;
 }
 
+.portfolio__img:hover {
+  transform: scale(1.01);
+}
+
 @media (min-width: 800px) {
   .portfolio__item {
     display: grid;

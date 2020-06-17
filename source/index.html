@@ -150,24 +150,62 @@
         <ul class="my-skills__list skills-list">
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">HTML5</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">Semantic HTML</li>
+              <li class="skill__list-item">Forms and Validations</li>
+              <li class="skill__list-item">Accessibillity</li>
+              <li class="skill__list-item">SEO Basics</li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">CSS3</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">Box model</li>
+              <li class="skill__list-item">Flexbox</li>
+              <li class="skill__list-item">Grid</li>
+              <li class="skill__list-item">Responsive design and Media Queries</li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">Less/Scss</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">
+                For writing more organized code, I used css preprocessors.
+                 I like to combine the bem methodology and css preprocessors,
+                it helps to create flexible blocks using variables and mixins.</li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
-            <h3 class="skill__title title-level-three">Gulp</h3>
+            <h3 class="skill__title title-level-three">NPM Scripts, Gulp</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">
+                I used Gulp to automate the project build. Using Gulp,
+                I optimized images and minimized css and js files,
+                 created svg-sprite and and added a style map.</li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">BEM</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">
+                With each project I understand the BEM methodology more and strive to create independent blocks for future use.
+              </li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">GIT</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">
+                I work with the version сontrol system using the console (clone, branch, commit, push, pull, stash).
+              </li>
+            </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">Java Script</h3>
+            <ul class="skill__list-items">
+              <li class="skill__list-item">Syntax and Basic Constructs</li>
+              <li class="skill__list-item">DOM Manipulation</li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -181,7 +219,9 @@
         </a>
         <ul class="section__portfolio-list portfolio">
           <li class="portfolio__item">
-            <img class="portfolio__img" width="256" height="144" src="img/pognali_mobile@1x.jpg" srcset="img/pognali_mobile@2x.jpg 2x" alt="preview 'Pognali' service">
+            <a href="https://misinin.github.io/pognali/">
+              <img class="portfolio__img" width="256" height="144" src="img/pognali_mobile@1x.jpg" srcset="img/pognali_mobile@2x.jpg 2x" alt="preview 'Pognali' service">
+            </a>
             <p class="portfolio__caption">
               Website of an online service for searching for travel companions. It consists of three pages - the main page, catalog and page-form for choosing travel destinations.
               The menu button on the mobile and tablet versions is made using java script. The BEM methodology was used.
@@ -223,7 +263,53 @@
             </ul>
           </li>
           <li class="portfolio__item">
-            <img class="portfolio__img" width="256" height="144" src="img/device_mobile@1x.jpg" srcset="img/device_mobile@2x.jpg 2x" alt="preview 'Devive-market'">
+            <a href="https://misinin.github.io/krayt-project/">
+              <img class="portfolio__img" width="256" height="144" src="img/giant_mobile@1x.jpg" srcset="img/giant_mobile@2x.jpg 2x" alt="preview 'Giant' page">
+            </a>
+            <p class="portfolio__caption">
+              Landing Page. It consists of one page.
+              The menu button on the mobile versions is made using java script. The BEM methodology was used.
+              <span class="portfolio__caption-accent">Adaptive graphics, grid-layout mobile, tablet, and desktop versions.</span>
+            </p>
+            <ul class="portfolio__technology technologes">
+              <li class="technologes__item">
+                <svg class="technologes__icon technologes__icon--html" width="19" height="19">
+                  <use xlink:href="#icon-html"></use>
+                </svg>
+                HTML5
+              </li>
+              <li class="technologes__item">
+                <svg class="technologes__icon technologes__icon--less" width="19" height="19">
+                  <use xlink:href="#icon-less"></use>
+                </svg>
+                Less
+              </li>
+              <li class="technologes__item">
+                <svg class="technologes__icon" width="19" height="19">
+                  <use xlink:href="#icon-js"></use>
+                </svg>
+                Java Script
+              </li>
+              <li class="technologes__item">
+                <svg class="technologes__icon technologes__icon--gulp" width="19" height="19">
+                  <use xlink:href="#icon-gulp"></use>
+                </svg>
+                Gulp
+              </li>
+            </ul>
+            <ul class="portfolio__links projects-links">
+              <li class="projects-links__item">
+                <a class="projects-links__link link" href="https://misinin.github.io/krayt-project/">Link to the project page</a>
+              </li>
+              <li class="projects-links__item">
+                <a class="projects-links__link link" href="https://github.com/Misinin/test_for_krayt">Link to the github repository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="portfolio__item">
+            <a href="https://misinin.github.io/market_device/">
+              <img class="portfolio__img" width="256" height="144" src="img/device_mobile@1x.jpg" srcset="img/device_mobile@2x.jpg 2x" alt="preview 'Devive-market'">
+            </a>
             <p class="portfolio__caption">
               Website of an online gadget store. It consists of two pages - the main page and the catalog.
               You can get to the catalog page by clicking on the section "Monopods for selfies".
@@ -262,7 +348,9 @@
             </ul>
           </li>
           <li class="portfolio__item">
-            <img class="portfolio__img" width="256" height="144" src="img/gllacy_mobile@1x.jpg" srcset="img/gllacy_mobile@2x.jpg 2x" alt="preview 'Glaccy-market'">
+            <a href="https://misinin.github.io/glaccy-market/">
+              <img class="portfolio__img" width="256" height="144" src="img/gllacy_mobile@1x.jpg" srcset="img/gllacy_mobile@2x.jpg 2x" alt="preview 'Glaccy-market'">
+            </a>
             <p class="portfolio__caption">
               Website of an Online ice-cream store. It consists of two pages - the main page and the catalog.
               You can get to the catalog page by clicking on the section "Catalog".
