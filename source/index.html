@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/pt-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Mikhail Misinin</title>
+  </head>
+  <body>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+    <script>
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
@@ -20,45 +26,30 @@
       <div><img src="https://mc.yandex.ru/watch/64346479" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <link rel="preload" href="fonts/pt-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Mikhail Misinin</title>
-  </head>
-  <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
       <div class="header__wrapper wrapper wrapper--header">
-        <a>
-          <picture>
-            <source media="(min-width: 600px)" srcset="img/logo_tablet@1x.png 1x, img/logo_tablet@2x.png 2x">
-            <img class="logo" src="img/logo_mobile@1x.png" srcset="img/logo_mobile@2x.png 2x" width="150" height="70" alt="resume logo">
-          </picture>
-        </a>
         <nav class="nav nav--nojs">
           <button class="button button--navigation nav__button">
           <span class="visually-hidden">Navigation toggle</span>
           </button>
           <ul class="nav-list nav__list">
             <li class="nav-list__item">
-              <a href="#home" class="nav-list__link">Home</a>
+              <a href="#about" class="nav-list__link">Обо мне</a>
             </li>
             <li class="nav-list__item">
-              <a href="#about" class="nav-list__link">About</a>
+              <a href="#education" class="nav-list__link">Образование</a>
             </li>
             <li class="nav-list__item">
-              <a href="#education" class="nav-list__link">Education</a>
+              <a href="#skills" class="nav-list__link">Навыки</a>
             </li>
             <li class="nav-list__item">
-              <a href="#skills" class="nav-list__link">Skills</a>
+              <a href="#work" class="nav-list__link">Мои работы</a>
             </li>
             <li class="nav-list__item">
-              <a href="#work" class="nav-list__link">My works</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#contacts" class="nav-list__link">Contacts</a>
+              <a href="#social" class="nav-list__link">Социальные сети</a>
             </li>
           </ul>
         </nav>
@@ -66,56 +57,89 @@
     </header>
     <section class="intro section" id="home">
       <div class="intro__wrapper wrapper wrapper--intro">
-        <h1 class="section__title section__title--intro title-level-one intro__title">
-          Hi, I am <strong class="accent-phrase">Mikhail Misinin</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro intro__subtitle">
-          a Front-end developer
-        </p>
-        <picture>
-          <source media="(min-width: 1000px)" srcset="img/avatar_desktop@1x.jpg 1x, img/avatar_desktop@2x.jpg 2x">
-          <source media="(min-width: 600px)" srcset="img/avatart_tablet@1x.jpg 1x, img/avatart_tablet@2x.jpg 2x">
-          <img class="intro__img" src="img/avatart_mobile@1x.jpg" srcset="img/avatart_mobile@2x.jpg 2x" width="231" height="231" alt="a picture of Misinin Mikhail face">
-        </picture>
+        <div class="intro__container">
+          <h1 class="section__title section__title--intro title-level-one intro__title">
+            Привет, я<strong class="accent-phrase">Мисинин Михаил</strong>
+          </h1>
+          <p class="section__subtitle section__subtitle--intro intro__subtitle">
+            Фронтенд разработчик
+          </p>
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/avatar_desktop@1x.jpg 1x, img/avatar_desktop@2x.jpg 2x">
+            <source media="(min-width: 600px)" srcset="img/avatart_tablet@1x.jpg 1x, img/avatart_tablet@2x.jpg 2x">
+            <img class="intro__img" src="img/avatart_mobile@1x.jpg" srcset="img/avatart_mobile@2x.jpg 2x" width="231" height="231" alt="a picture of Misinin Mikhail face">
+          </picture>
+        </div>
+        <div class="intro__container-contacts contacts">
+          <h2 class="contacts__title">
+            Связаться со мной:
+          </h2>
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:mikhail@misinin.ru">
+                <svg class="contacts-list__icon" width="19" height="19">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+                mikhail@misinin.ru
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:+79602568958">
+                <svg class="contacts-list__icon" width="19" height="19">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                +79602568958
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="about section" id="about">
       <div class="about__wrapper wrapper wrapper--about">
         <h2 class="section__title section__title--about about__title title-level-two">
-          About
+          Обо мне
         </h2>
         <p class="section__subtitle about__subtitle section__subtitle--about">
-          Self-motivated junior front-end developer with knowledge and proficiency in HTML, CSS, Java Script and mobile responsive website development.
-          I'm looking for a job as a Junior Front-end developer at a company which is engaged in creating responsive websites and/or mobile-based applications.
+          Владею навыками адаптивной верстки сайтов с использованием препроцессоров и автоматизации процессов сборки.
+          Понимаю основы ООП, имею практический опыт разработки веб-интерфейсов на JavaScript.
         </p>
-        <a href="https://spb.hh.ru/resume/b6974230ff0774ce4a0039ed1f6c7a68384243" class="about__button button button--cv">download cv</a>
+        <p class="section__subtitle about__subtitle section__subtitle--about">
+          Стремлюсь постоянно развивать свои навыки, учиться и набираться опыта. ​​​​​​
+          Люблю верстку, направление моего развития разработка сложных клиентских приложений и UI/UX.
+        </p>
+        <a href="https://spb.hh.ru/resume/b6974230ff0774ce4a0039ed1f6c7a68384243" class="about__button button button--cv">
+        резюме на hh.ru
+        </a>
       </div>
     </section>
     <section class="education section" id="education">
       <div class="education__wrapper wrapper wrapper--education">
         <h2 class="section__title section__title--education title-level-two">
-          Education
+          Образование
         </h2>
         <ul class="education__list education-list">
           <li class="education-list__item education-place">
-            <h3 class="education-place__title title-level-three">The Bonch-Bruevich Saint-Petersburg State University of Telecommunications</h3>
+            <h3 class="education-place__title title-level-three">
+              Санкт-Петербургский государственный университет телекоммуникаций им. проф. М.А.Бонч-Бруевича
+            </h3>
             <p class="education-place__date">
-              Sept. 2010 - May 2015
+              Сент. 2010 - Май 2015
             </p>
             <p class="education-place__subtitle">
-              Mobile objects communication means Engineer.
+              Средства связи с подвижными объектами.
             </p>
           </li>
           <li class="education-list__item education-place">
             <h3 class="education-place__title title-level-three">HTML Academy</h3>
             <p class="education-place__date">
-              Jan. 2020 - present
+              Янв. 2020 - н/в
             </p>
             <p class="education-place__subtitle">
-              The overall objective of the training is to master development of complex client applications.
+              Фронтенд разработчик
             </p>
             <input class="education-place__radio-show visually-hidden" type="radio" name="certificates" id="show-certificates-block">
-            <label class="education-place__button button button--certificates" for="show-certificates-block">show certificates</label>
+            <label class="education-place__button button button--certificates" for="show-certificates-block">показать сертификаты</label>
             <input class="education-place__radio-hidden visually-hidden" type="radio" name="certificates" id="hide-certificates-block" checked>
             <div class="education-place__certificates certificates">
               <label class="button button--hide-certificates certificates__close-button" for="hide-certificates-block">
@@ -145,50 +169,45 @@
     <section class="my-skills section" id="skills">
       <div class="my-skills__wrapper wrapper wrapper--my-skills">
         <h2 class="section__title my-skills__title section__title--skills title-level-two">
-          My skills
+          Навыки
         </h2>
         <ul class="my-skills__list skills-list">
           <li class="skill skills-list__item">
-            <h3 class="skill__title title-level-three">HTML5</h3>
+            <h3 class="skill__title title-level-three">HTML</h3>
             <ul class="skill__list-items">
-              <li class="skill__list-item">Semantic HTML</li>
-              <li class="skill__list-item">Forms and Validations</li>
-              <li class="skill__list-item">Accessibillity</li>
-              <li class="skill__list-item">SEO Basics</li>
+              <li class="skill__list-item">Валидная и семантичная разметка</li>
+              <li class="skill__list-item">Формы и валидация</li>
+              <li class="skill__list-item">Доступность</li>
             </ul>
           </li>
           <li class="skill skills-list__item">
-            <h3 class="skill__title title-level-three">CSS3</h3>
+            <h3 class="skill__title title-level-three">CSS</h3>
             <ul class="skill__list-items">
-              <li class="skill__list-item">Box model</li>
-              <li class="skill__list-item">Flexbox</li>
-              <li class="skill__list-item">Grid</li>
-              <li class="skill__list-item">Responsive design and Media Queries</li>
+              <li class="skill__list-item">Блочная модель</li>
+              <li class="skill__list-item">Адаптивные сетки</li>
+              <li class="skill__list-item">Адаптивные декоративные элементы</li>
+              <li class="skill__list-item">Адаптивная графика</li>
+              <li class="skill__list-item">Векторная графика и оптимизация</li>
             </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">Less/Scss</h3>
             <ul class="skill__list-items">
-              <li class="skill__list-item">
-                For writing more organized code, I used css preprocessors.
-                 I like to combine the bem methodology and css preprocessors,
-                it helps to create flexible blocks using variables and mixins.</li>
+              <li class="skill__list-item">Переменные</li>
+              <li class="skill__list-item">Миксины</li>
             </ul>
           </li>
           <li class="skill skills-list__item">
-            <h3 class="skill__title title-level-three">NPM Scripts, Gulp</h3>
+            <h3 class="skill__title title-level-three">NPM, Gulp</h3>
             <ul class="skill__list-items">
-              <li class="skill__list-item">
-                I used Gulp to automate the project build. Using Gulp,
-                I optimized images and minimized css and js files,
-                 created svg-sprite and and added a style map.</li>
+              <li class="skill__list-item">Автоматизация процессов сборки проекта с помощью npm пакетов</li>
             </ul>
           </li>
           <li class="skill skills-list__item">
-            <h3 class="skill__title title-level-three">BEM</h3>
+            <h3 class="skill__title title-level-three">БЭМ</h3>
             <ul class="skill__list-items">
               <li class="skill__list-item">
-                With each project I understand the BEM methodology more and strive to create independent blocks for future use.
+                Понимаю основные способы изменения блоков и их модификации.
               </li>
             </ul>
           </li>
@@ -196,15 +215,20 @@
             <h3 class="skill__title title-level-three">GIT</h3>
             <ul class="skill__list-items">
               <li class="skill__list-item">
-                I work with the version сontrol system using the console (clone, branch, commit, push, pull, stash).
+                Работаю с системой контроля версий через терминал (clone, branch, commit, push, pull, stash)
               </li>
             </ul>
           </li>
           <li class="skill skills-list__item">
             <h3 class="skill__title title-level-three">Java Script</h3>
             <ul class="skill__list-items">
-              <li class="skill__list-item">Syntax and Basic Constructs</li>
-              <li class="skill__list-item">DOM Manipulation</li>
+              <li class="skill__list-item">Встроенные API</li>
+              <li class="skill__list-item">DOM</li>
+              <li class="skill__list-item">Обработка событий</li>
+              <li class="skill__list-item">Модули</li>
+              <li class="skill__list-item">Работа с сетью</li>
+              <li class="skill__list-item">Структуры данных</li>
+              <li class="skill__list-item">EcmaScript 2015+</li>
             </ul>
           </li>
         </ul>
@@ -212,20 +236,17 @@
     </section>
     <section class="my-works section" id="work">
       <div class="my-works__wrapper wrapper wrapper--my-works">
-        <a href="http://github.com/Misinin">
-          <h2 class="section__title section__title--works title-level-two">
-            My works
-          </h2>
-        </a>
+        <h2 class="section__title section__title--works title-level-two">
+          Мои работы
+        </h2>
         <ul class="section__portfolio-list portfolio">
           <li class="portfolio__item">
             <a href="https://misinin.github.io/pognali/">
-              <img class="portfolio__img" width="256" height="144" src="img/pognali_mobile@1x.jpg" srcset="img/pognali_mobile@2x.jpg 2x" alt="preview 'Pognali' service">
+            <img class="portfolio__img" width="256" height="144" src="img/pognali_mobile@1x.jpg" srcset="img/pognali_mobile@2x.jpg 2x" alt="preview 'Pognali' service">
             </a>
             <p class="portfolio__caption">
-              Website of an online service for searching for travel companions. It consists of three pages - the main page, catalog and page-form for choosing travel destinations.
-              The menu button on the mobile and tablet versions is made using java script. The BEM methodology was used.
-              <span class="portfolio__caption-accent">Adaptive graphics, grid-layout mobile, tablet, and desktop versions.</span>
+              Сайт онлайн сервиса поиска попутчиков для путешествий. Состоит из трех страниц - главной, каталога попутчиков и формы выбора направления.
+              <span class="portfolio__caption-accent">Использована адаптивная графика, сайт адаптирован под мобильную, планшетную и десктопную версии.</span>
             </p>
             <ul class="portfolio__technology technologes">
               <li class="technologes__item">
@@ -255,21 +276,20 @@
             </ul>
             <ul class="portfolio__links projects-links">
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://misinin.github.io/pognali/">Link to the project page</a>
+                <a class="projects-links__link link" href="https://misinin.github.io/pognali/">Ссылка на страницу проекта</a>
               </li>
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://github.com/Misinin/pognali">Link to the github repository</a>
+                <a class="projects-links__link link" href="https://github.com/Misinin/pognali">Ссылка на github репозиторий</a>
               </li>
             </ul>
           </li>
           <li class="portfolio__item">
             <a href="https://misinin.github.io/krayt-project/">
-              <img class="portfolio__img" width="256" height="144" src="img/giant_mobile@1x.jpg" srcset="img/giant_mobile@2x.jpg 2x" alt="preview 'Giant' page">
+            <img class="portfolio__img" width="256" height="144" src="img/giant_mobile@1x.jpg" srcset="img/giant_mobile@2x.jpg 2x" alt="preview 'Giant' page">
             </a>
             <p class="portfolio__caption">
-              Landing Page. It consists of one page.
-              The menu button on the mobile versions is made using java script. The BEM methodology was used.
-              <span class="portfolio__caption-accent">Adaptive graphics, grid-layout mobile, tablet, and desktop versions.</span>
+              Одностраничный сайт, созданный без макета. Может использоваться как шаблон.
+              <span class="portfolio__caption-accent">Использована адаптивная графика, сайт адаптирован под мобильную, планшетную и десктопную версии.</span>
             </p>
             <ul class="portfolio__technology technologes">
               <li class="technologes__item">
@@ -299,24 +319,22 @@
             </ul>
             <ul class="portfolio__links projects-links">
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://misinin.github.io/krayt-project/">Link to the project page</a>
+                <a class="projects-links__link link" href="https://misinin.github.io/krayt-project/">Ссылка на страницу проекта</a>
               </li>
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://github.com/Misinin/test_for_krayt">Link to the github repository</a>
+                <a class="projects-links__link link" href="https://github.com/Misinin/test_for_krayt">Ссылка на github репозиторий</a>
               </li>
             </ul>
           </li>
           <li class="portfolio__item">
             <a href="https://misinin.github.io/market_device/">
-              <img class="portfolio__img" width="256" height="144" src="img/device_mobile@1x.jpg" srcset="img/device_mobile@2x.jpg 2x" alt="preview 'Devive-market'">
+            <img class="portfolio__img" width="256" height="144" src="img/device_mobile@1x.jpg" srcset="img/device_mobile@2x.jpg 2x" alt="preview 'Devive-market'">
             </a>
             <p class="portfolio__caption">
-              Website of an online gadget store. It consists of two pages - the main page and the catalog.
-              You can get to the catalog page by clicking on the section "Monopods for selfies".
-              Slides on the main page are switched and created in pure CSS. On the main page, you can call two Popups:
-              Click on the map in the Contacts section
-              By clicking on the "Write to us" button.
-              <span class="portfolio__caption-accent">The site was created with a screen resolution of 1200 pixels.</span>
+              Сайт онлайн магазина гаджетов. Состоит из двух страниц - главной и каталога товаров.
+              <span class="portfolio__caption-accent">Переключение картинок слайдера на главной странице реализовано на чистом CSS.</span>
+              На странице имеется два всплывыющих окна: по клику на карте в разделе Контакты и по клику на ссылке Напишите нам.
+              <span class="portfolio__caption-accent">Сайт создан под разрешение экрана 1200px.</span>
             </p>
             <ul class="portfolio__technology technologes">
               <li class="technologes__item">
@@ -340,22 +358,20 @@
             </ul>
             <ul class="portfolio__links projects-links">
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://misinin.github.io/market_device/">Link to the project page</a>
+                <a class="projects-links__link link" href="https://misinin.github.io/market_device/">Ссылка на страницу проекта</a>
               </li>
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://github.com/Misinin/market_device">Link to the github repository</a>
+                <a class="projects-links__link link" href="https://github.com/Misinin/market_device">Ссылка на github репозиторий</a>
               </li>
             </ul>
           </li>
           <li class="portfolio__item">
             <a href="https://misinin.github.io/glaccy-market/">
-              <img class="portfolio__img" width="256" height="144" src="img/gllacy_mobile@1x.jpg" srcset="img/gllacy_mobile@2x.jpg 2x" alt="preview 'Glaccy-market'">
+            <img class="portfolio__img" width="256" height="144" src="img/gllacy_mobile@1x.jpg" srcset="img/gllacy_mobile@2x.jpg 2x" alt="preview 'Glaccy-market'">
             </a>
             <p class="portfolio__caption">
-              Website of an Online ice-cream store. It consists of two pages - the main page and the catalog.
-              You can get to the catalog page by clicking on the section "Catalog".
-              Slides on the main page are switched and created in pure CSS.
-              <span class="portfolio__caption-accent">The site was created with a screen resolution of 1200 pixels.</span>
+              Сайт онлайн магазина мороженого. Состоит из двух страниц - главной и каталога товаров.
+              <span class="portfolio__caption-accent">Сайт создан под разрешение экрана 1200px.</span>
             </p>
             <ul class="portfolio__technology technologes">
               <li class="technologes__item">
@@ -373,52 +389,73 @@
             </ul>
             <ul class="portfolio__links projects-links">
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://misinin.github.io/glaccy-market/">Link to the project page</a>
+                <a class="projects-links__link link" href="https://misinin.github.io/glaccy-market/">Ссылка на страницу проекта</a>
               </li>
               <li class="projects-links__item">
-                <a class="projects-links__link link" href="https://github.com/Misinin/glaccy-market">Link to the github repository</a>
+                <a class="projects-links__link link" href="https://github.com/Misinin/glaccy-market">Ссылка на github репозиторий</a>
+              </li>
+            </ul>
+          </li>
+          <li class="portfolio__item">
+            <a href="https://misinin.github.io/Test_Adcombo_CTR/">
+            <img class="portfolio__img" width="256" height="144" src="img/responsive-grid_mobile@1x.jpg" srcset="img/responsive-grid_mobile@2x.jpg 2x" alt="preview responsive-grid page">
+            </a>
+            <p class="portfolio__caption">
+              Адаптивная сетка сайта создана <span class="portfolio__caption-accent">без использования Flexbox и Grid.</span>
+              Адаптирован под мобильную и десктопную версии.
+            </p>
+            <ul class="portfolio__technology technologes">
+              <li class="technologes__item">
+                <svg class="technologes__icon technologes__icon--html" width="19" height="19">
+                  <use xlink:href="#icon-html"></use>
+                </svg>
+                HTML5
+              </li>
+              <li class="technologes__item">
+                <svg class="technologes__icon" width="19" height="19">
+                  <use xlink:href="#icon-css"></use>
+                </svg>
+                CSS3
+              </li>
+            </ul>
+            <ul class="portfolio__links projects-links">
+              <li class="projects-links__item">
+                <a class="projects-links__link link" href="https://misinin.github.io/Test_Adcombo_CTR/">Ссылка на страницу проекта</a>
+              </li>
+              <li class="projects-links__item">
+                <a class="projects-links__link link" href="https://github.com/Misinin/Test_Adcombo_CTR">Ссылка на github репозиторий</a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
     </section>
-    <footer class="contacts section" id="contacts">
-      <div class="section__wrapper wrapper wrapper--contacts">
-        <h2 class="section__title section__title--contacts title-level-two">
-          My contacts
+    <footer class="footer section" id="social">
+      <div class="footer__wrapper wrapper wrapper--social">
+        <h2 class="section__title section__title--social title-level-two">
+          Социальныe сети
         </h2>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:mikhail@misinin.ru">
-              <svg class="contacts-list__icon" width="19" height="19">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-              mikhail@misinin.ru
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+79602568958">
-              <svg class="contacts-list__icon" width="19" height="19">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-              +79602568958
-            </a>
-          </li>
-        </ul>
         <ul class="social-list">
           <li class="social-list__item">
             <a href="https://github.com/Misinin" class="social-list__link">
               <span class="visually-hidden">GitHub</span>
-              <svg class="social-list__icon" width="45" height="45">
+              <svg class="social-list__icon" width="30" height="30">
                 <use xlink:href="#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a href="https://vk.com/magic_cool" class="social-list__link">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social-list__icon" width="30" height="30">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://vk.com/magic_cool" class="social-list__link">
               <span class="visually-hidden">Vkontakte</span>
-              <svg class="social-list__icon" width="45" height="45">
+              <svg class="social-list__icon" width="30" height="30">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>

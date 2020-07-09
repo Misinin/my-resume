@@ -1,22 +1,26 @@
 .contacts-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .contacts-list__link {
   position: relative;
+  padding-left: 2rem;
   display: block;
 
   font-family: $ff-primary;
   font-weight: $fw-reg;
   font-size: 1.2rem;
   line-height: 2em;
-  color: $clr-text-contrast;
+  color: $clr-text;
 }
 
 .contacts-list__icon {
   position: absolute;
   top: 0.5rem;
-  left: -30px;
+  left: 0;
 
   fill: currentColor;
 }
@@ -26,15 +30,13 @@
     display: flex;
     flex-direction: column;
   }
-
-  .contacts-list__item {
-    align-self: center;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts-list__link {
-    font-size: 1.6rem;
+    padding-left: 4rem;
+
+    font-size: 1.5rem;
   }
 
   .contacts-list__link:hover {
@@ -46,8 +48,8 @@
   }
 
   .contacts-list__icon {
-    top: 1rem;
-    left: -44px;
+    top: 0.7rem;
+    left: 0;
     width: 25px;
     height: 25px;
   }

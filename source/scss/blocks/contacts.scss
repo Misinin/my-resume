@@ -1,5 +1,28 @@
 @import "variables";
 
-.contacts {
-  background-color: $clr-bg-dark;
+.contacts__title {
+  margin: 0;
+  margin-bottom: 0.5em;
+
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 35%;
+    padding: 1rem;
+
+    border: 1px solid $clr-bg-dark;
+  }
+
+  .contacts__title {
+    margin: 0;
+  }
 }

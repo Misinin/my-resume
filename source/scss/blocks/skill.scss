@@ -3,12 +3,14 @@
 .skill {
   padding: 1.2em;
 
-  background-color: $clr-bg-dark;
   box-shadow: $box-shadow;
 }
 
 .skill__title {
-  color: $clr-text-contrast;
+  margin: 0;
+  margin-bottom: 0.5em;
+
+  color: $clr-accent;
 
   text-transform: uppercase;
 }

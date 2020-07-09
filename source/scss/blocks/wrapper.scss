@@ -3,22 +3,31 @@
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  padding: 4em 0;
 }
 
 .wrapper--header {
   padding-top: 1em;
+  padding-bottom: 1em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.wrapper--about {
+  padding: 2em 0;
+}
+
+.wrapper--education {
+  padding: 2em 0;
+}
+
 .wrapper--my-skills {
+  padding: 2em 0;
   width: 90%;
 }
 
-.wrapper--contacts {
+.wrapper--social {
   padding: 1em 0;
 }
 
@@ -32,10 +41,7 @@
   }
 
   .wrapper--intro {
-    margin-top: 9em;
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    grid-template-rows: min-content min-content;
+    padding-bottom: 1em;
   }
 
   .wrapper--about {
@@ -55,10 +61,10 @@
   .wrapper--intro {
     max-width: 1200px;
     margin-top: 0;
-    padding-top: 2em;
+    padding-top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .wrapper--about,

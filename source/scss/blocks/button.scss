@@ -22,11 +22,11 @@
   display: block;
   width: max-content;
 
-  text-transform: uppercase;
   font-size: 1.25rem;
   font-weight: $fw-bold;
 
   color: $clr-text;
+  text-decoration: underline;
 }
 
 .button--certificates {

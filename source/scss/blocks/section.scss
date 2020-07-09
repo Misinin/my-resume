@@ -6,28 +6,27 @@
 
 .section__title--about {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .section__title--education,
-.section__title--contacts {
+.section__title--social {
   margin-bottom: 1em;
+
+  text-align: center;
 
   color: $clr-text-contrast;
 }
 
-.section__title--works {
-  position: relative;
-  margin-bottom: 2em;
-
-  color: $clr-accent;
-
-  text-decoration: underline;
+.section__title--skills {
+  text-align: center;
 }
 
-.section__title--works:hover {
-  opacity: 0.7;
+.section__title--works {
+  position: relative;
+  margin-bottom: 1em;
 
-  text-decoration: none;
+  color: $clr-text;
 }
 
 .section__title--works:active {
@@ -54,7 +53,7 @@
 }
 
 .section__subtitle--about {
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,7 +85,7 @@
     text-align: center;
   }
 
-  .section__title--works {
-    width: 16rem;
+  .section__title--social {
+    margin-bottom: 0.5em;
   }
 }

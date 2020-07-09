@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.intro__container {
+  margin-bottom: 1.5em;
+}
+
 .intro__img {
   box-shadow: $box-shadow;
   background-color: currentColor;
@@ -21,6 +25,19 @@
     flex-wrap: wrap;
   }
 
+  .intro__container {
+    margin-top: 9em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  .intro__container-contacts {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .intro__title {
     width: 100%;
     grid-column-start: 2;
@@ -28,7 +45,7 @@
 
   .intro__img {
     position: absolute;
-    top: 3rem;
+    top: -1rem;
     left: 8%;
     width: 190px;
     height: 285px;
@@ -53,11 +70,22 @@
     height: 310px;
   }
 
-  .intro__title {
-    width: 40%;
+  .intro__subtitle {
+    width: 550px;
+  }
+
+  .intro__container-contacts {
+    align-self: center;
   }
 
   .intro__subtitle {
-    width: 550px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .intro__container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -25,6 +25,12 @@
   color: $clr-text;
 }
 
+@media (min-width: $tablet-width) {
+  .nav-list__item:first-of-type {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .nav-list {
     justify-content: space-around;
